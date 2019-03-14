@@ -1,0 +1,4 @@
+动态代理学习纪要：
+1，业务处理类GamePlayer：处理相应的业务逻辑
+2，自带的InvocationHandler类对代理模式有很好的处理，只需要直接实现InvocationHandler的invoke方法，制定相应的method，object即可
+3，场景类中初始化对象，然后制定代理GamePlayIH，实例化出proxy代理，即可用代理实现业务逻辑

@@ -1,0 +1,11 @@
+package pattern.proxy;
+
+public interface IGamePlayer
+{
+	//µÇÂ¼ÓÎÏ·
+	public void login(String user, String password);
+	//É±¹Ö
+	public void killboss();
+	//Éý¼¶
+	public void upgrade();
+}
