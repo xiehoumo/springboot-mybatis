@@ -18,17 +18,35 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for `t_user`
 -- ----------------------------
-DROP TABLE IF EXISTS `t_user`;
-CREATE TABLE `t_user` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `phone` varchar(255) NOT NULL,
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` bigint(20) NOT NULL COMMENT '主键',
+  `name` VARCHAR(20) DEFAULT NULL COMMENT 'name',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('1', '11', '111111', '1111111');
-INSERT INTO `t_user` VALUES ('2', '111', '1111111', '4444');
+INSERT INTO `user`(id,name) VALUES(1,'hello1');
+INSERT INTO `user`(id,name) VALUES(2,'hello2');
+INSERT INTO `user`(id,name) VALUES(3,'hello3');
+INSERT INTO `user`(id,name) VALUES(4,'hello4');
+INSERT INTO `user`(id,name) VALUES(5,'hello5');
+INSERT INTO `user`(id,name) VALUES(6,'hello6');
+INSERT INTO `user`(id,name) VALUES(7,'hello7');
+INSERT INTO `user`(id,name) VALUES(8,'hello8');
+INSERT INTO `user`(id,name) VALUES(9,'hello9');
+INSERT INTO `user`(id,name) VALUES(10,'hello10');
+INSERT INTO `user`(id,name) VALUES(11,'hello11');
+INSERT INTO `user`(id,name) VALUES(12,'hello12');
+INSERT INTO `user`(id,name) VALUES(13,'hello13');
+INSERT INTO `user`(id,name) VALUES(14,'hello14');
+INSERT INTO `user`(id,name) VALUES(15,'hello15');
+INSERT INTO `user`(id,name) VALUES(16,'hello16');
+INSERT INTO `user`(id,name) VALUES(17,'hello17');
+INSERT INTO `user`(id,name) VALUES(18,'hello18');
+INSERT INTO `user`(id,name) VALUES(19,'hello19');
+INSERT INTO `user`(id,name) VALUES(20,'hello20');
+

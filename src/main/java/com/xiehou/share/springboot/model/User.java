@@ -1,43 +1,26 @@
 package com.xiehou.share.springboot.model;
 
 public class User {
-    private Integer userId;
+    private Integer id;
 
-    private String  userName;
+    private String  name;
 
-    private String  password;
+	public Integer getId() {
+		return id;
+	}
 
-    private String  phone;
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public Integer getUserId() {
-        return userId;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public String getUserName() {
-        return userName;
-    }
 
-    public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
-    }
+  
 }
